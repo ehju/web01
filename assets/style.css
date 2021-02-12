@@ -1,4 +1,30 @@
 .title {
-  text-align: center;
-  border: 3px solid green;
+	text-align: center;
+	border-bottom: 2px solid black;
+	padding-bottom: 30px;
+	margin: 0;
+}
+
+a {
+	color: black;
+}
+#wrapper {
+	display: grid;
+	grid-template-columns: 150px 1fr;
+}
+#wrapper ol {
+	border-right: 2px solid black;
+	margin: 0;
+	padding: 20px;
+}
+#article {
+	padding: 20px;
+}
+@media (max-width: 800px) {
+	#wrapper {
+		display: block;
+	}
+	#wrapper ol {
+		border-right: none;
+	}
 }
