@@ -4,7 +4,9 @@
 	padding-bottom: 30px;
 	margin: 0;
 }
-
+a {
+	color: black;
+}
 
 #wrapper {
 	display: grid;
