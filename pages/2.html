@@ -13,6 +13,41 @@
 		<h1 class="title"><a href="../index.html">WEB</a></h1>
 		<div id="wrapper">
 			<ol>
+				<input id="nightbutton"
+					type="button"
+					value="NightMode"
+					onclick="
+					var target = document.querySelector('body');
+					
+					if (this.value==='NightMode') {
+						console.log(this);
+						target.style.backgroundColor='black';
+						target.style.color='white';
+						document.querySelector('.title').style.borderBottomColor='white';
+						this.value='DayMode';
+						this.style.color='white';
+						var alist=document.querySelectorAll('a');
+						var i =0;
+						while(i<alist.length){
+							 alist[i].style.color='white';
+							 i=i+1;
+					 }
+						document.querySelector('#nightbutton').style.backgroundColor='midnightBlue';
+					} else {
+						target.style.backgroundColor='white'; 
+						target.style.color='black';
+						document.querySelector('.title').style.borderBottomColor='black';
+						this.value='NightMode';
+						var alist=document.querySelectorAll('a');
+						var i =0;
+						while(i<alist.length){
+									 alist[i].style.color='black';
+									 i=i+1;
+									 }
+					}
+					"/>
+				<!--<input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white'; document.querySelector('body').style.color='black';">-->
+
 				<li><a href="1.html">HTML</a></li>
 				<li><a href="2.html">CSS</a></li>
 				<li><a href="3.html">JAVASCRIPT</a></li>
